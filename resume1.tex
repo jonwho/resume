@@ -1,0 +1,254 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Jonathan}{Ho}{ \urlstyle{same}\url{http://jonwho.github.io} \\
+\href{mailto:housuilun@yahoo.com}{housuilun@yahoo.com} | 530.320.7863
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{UC San Diego}
+\descript{Bachelor of Science in Computer Science and Engineering}
+\location{Expected June 2015 | La Jolla, CA}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/jonwho}{\custombold{jonwho}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/jonwho}{\custombold{jonwho}} \\
+Twitter://  \href{https://twitter.com/lj080805}{\custombold{@lj080805}} \\
+Email:// \href{mailto:housuilun@yahoo.com}{housuilun@yahoo.com}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Key Courses}
+C and C++ \\
+Software Engineering \\
+Adv. Software Engineering \\
+Software Tools \& Technology \\
+Android Development \\
+Data Structures \\
+Adv. Data Structures \\
+Operating Systems \\
+Algorithms \& Design \\
+Computer Architecture \\
+Compiler Construction \\
+Functional Programming \\
+Ubiquitous Computing \\
+Database Theory \\
+Server Side Applications \\
+Mobile Applications
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+C/C++ \textbullet{} Java \textbullet{} C\# \textbullet{} JavaScript \textbullet{} Ruby \\ 
+\subsection{Web Development}
+AngularJS \textbullet{} Rails \textbullet{} Polymer \textbullet{} HTML \\ CSS
+\textbullet{} LESS \textbullet{} SASS \textbullet{} Yeoman \textbullet{} Node.js \\
+Express.js \textbullet{} MEAN \textbullet{} Grunt \textbullet{} Bower \\
+\subsection{Editors}
+vi \textbullet{} Vim \textbullet{} Eclipse \textbullet{} Sublime Text \\
+IntelliJ IDEA \textbullet{} Visual Studios \\ Android Studio
+\subsection{Miscellaneous}
+git \textbullet{} JUnit \textbullet{} XML \textbullet{} MySQL \textbullet{} JSON \\ UML
+\textbullet{} XNA Game Studios \textbullet{} Cucumber \\ Jasmine \textbullet{} PostgreSQL
+\textbullet{} SQLite \\ MongoDB \textbullet{} Unity \textbullet{} Heroku \textbullet{}
+Firebase
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Sony Network Entertainment}
+\descript{| Software Architect Intern}
+\location{June 2014 – Sep 2014 | San Diego, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on continuous integration for OAuth 2.0 on the network platform
+\item Created internal application with AngularJS to improve client integration
+\item Participated in company hackathon making a message board to consolidate ideas in active and live fashion
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BridgeCrest Medical}
+\descript{| Software Engineer}
+\location{Oct 2013 – April 2014 | San Diego, CA}
+\begin{tightemize}
+\item Created web portal application in Ruby on Rails and delegated tasks
+\item Maintain application on server and deploy test applications on Heroku
+\item Started work on REST APIs for mobile application to use
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Thermo Fisher Scientific}
+\descript{| Software Development Intern}
+\location{June 2013 – Sep 2013 | Carlsbad, CA}
+\begin{tightemize}
+\item Developed performance tests for application on Amazon Web Services
+\item Updated Global IT functions resource page to improve employee experience
+\item Used AWS Java APIs to test data from SOAP/REST endpoints
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Speedy Type} \\
+\begin{tightemize}
+\item Designed to aid those suffering from Locked-In Syndrome
+\item Uses both Microsoft Surface and EyeTribe technology
+\item Allows patient to initiate converstaion with loved ones
+\item 3 to 5 times faster than traditional means of communication
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Scott the Intern} \\
+\begin{tightemize}
+\item Created a video game playable on Xbox and PC written in C\# using XNA Game Studios 3.0
+\item Implemented free world movement in 2D sprite sheets
+\item Fight system was turn based and included sprite animations
+\item Maps for the game were made using a custom made map-maker
+\item Game states could be saved and loaded by player
+\end{tightemize}
+\sectionsep
+
+\runsubsection{My City} \\
+\begin{tightemize}
+\item Android app used to socialize with your friends from Gmail
+\item App puts your friends locations into Google Maps
+\item Focused on GoogleTak and RTMP APIs in Java
+\item Worked with multiple threads to ensure data synchronization
+\item Made group chat feature with any friends within 1 mile
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Simple Chat} \\
+\begin{tightemize}
+\item Persistent chat client made with AngularJS and Firebase
+\item Persistence made possible by using Firebase APIs
+\item Single Page Application made modular with AngularJS
+\item Capable of porting chat client anywhere using AngularJS
+\item Multiple chat rooms are implemented separated into tabs 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%2010     & National & Comp. Soc. of India's National Programming Contest\\
+%\end{tabular}
+%\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
