@@ -1,12 +1,10 @@
 resume
 ======
 
-A LaTeX journey
+This is the gh-pages branch to host static page as resume.
 
-Version control my resume so I don't have to keep so many copies of the old ones on my computer. Maybe enjoy LaTeX, who knows.
+# TODO
 
-Compile tex file with pdflatex to get pdf file.
-
-Compile tex file with latex to get dvi file.
-
-Run xdvi on dvi file to view file.
+* Add some dev tools gulp/grunt
+* Use Sass cuz it's easier
+* File watchers and reloaders would be nice

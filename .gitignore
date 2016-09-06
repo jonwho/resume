@@ -4,5 +4,4 @@
 *.out
 *.aux
 node_modules/
-bower_components/
 *.DS_STORE
