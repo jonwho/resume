@@ -25,7 +25,7 @@ body {
       margin: 15px 0 0 0;
     }
 
-    padding: 15px 0 0 0;
+    padding: 15px 0 15px 0;
     text-align: center;
 
     a {
@@ -41,6 +41,41 @@ body {
       font-size: .5em;
       margin: 0;
     }
+  }
+}
+
+.resume-body {
+  p {
+    margin: 0;
+  }
+
+  .resume-aside {
+    float: left;
+    width: 20%;
+  }
+
+  .resume-main {
+    float: left;
+    width: 80%;
+  }
+}
+
+/*
+ * This one is really cool to know when floating items.
+ * Need this to combat zero-height container problems.
+ */
+.clearfix {
+  zoom: 1;
+
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
   }
 }
 

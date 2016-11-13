@@ -8,7 +8,7 @@ body {
   margin: 15px auto;
   box-shadow: 5px 5px 5px #ddd; }
   .resume .resume-header {
-    padding: 15px 0 0 0;
+    padding: 15px 0 15px 0;
     text-align: center; }
     .resume .resume-header:after {
       content: "";
@@ -25,6 +25,29 @@ body {
     .resume .resume-header .author-metadata {
       font-size: .5em;
       margin: 0; }
+
+.resume-body p {
+  margin: 0; }
+.resume-body .resume-aside {
+  float: left;
+  width: 20%; }
+.resume-body .resume-main {
+  float: left;
+  width: 80%; }
+
+/*
+ * This one is really cool to know when floating items.
+ * Need this to combat zero-height container problems.
+ */
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after {
+    clear: both; }
 
 a.pdf-download {
   position: fixed;
