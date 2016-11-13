@@ -25,15 +25,23 @@ body {
     .resume .resume-header .author-metadata {
       font-size: .5em;
       margin: 0; }
-
-.resume-body p {
-  margin: 0; }
-.resume-body .resume-aside {
-  float: left;
-  width: 20%; }
-.resume-body .resume-main {
-  float: left;
-  width: 80%; }
+  .resume .resume-body p {
+    margin: 0; }
+  .resume .resume-body .resume-aside {
+    margin: 0 0 0 15px;
+    float: left;
+    width: 20%; }
+    .resume .resume-body .resume-aside .subsection h1 {
+      margin: 0;
+      font-size: .5em;
+      text-transform: uppercase; }
+  .resume .resume-body .resume-main {
+    margin: 0 15px 0 0;
+    float: left;
+    width: 75%; }
+    .resume .resume-body .resume-main .subsection h1 {
+      font-size: .5em;
+      text-transform: uppercase; }
 
 /*
  * This one is really cool to know when floating items.

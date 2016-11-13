@@ -42,21 +42,38 @@ body {
       margin: 0;
     }
   }
-}
 
-.resume-body {
-  p {
-    margin: 0;
-  }
+  .resume-body {
+    p {
+      margin: 0;
+    }
 
-  .resume-aside {
-    float: left;
-    width: 20%;
-  }
+    .resume-aside {
+      margin: 0 0 0 15px;
+      float: left;
+      width: 20%;
 
-  .resume-main {
-    float: left;
-    width: 80%;
+      .subsection {
+        h1 {
+          margin: 0;
+          font-size: .5em;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .resume-main {
+      margin: 0 15px 0 0;
+      float: left;
+      width: 75%;
+
+      .subsection {
+        h1 {
+          font-size: .5em;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
 
