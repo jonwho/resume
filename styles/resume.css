@@ -8,8 +8,15 @@ body {
   margin: 15px auto;
   box-shadow: 5px 5px 5px #ddd; }
   .resume .resume-header {
-    margin: 5px 0;
+    padding: 15px 0 0 0;
     text-align: center; }
+    .resume .resume-header:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: #000;
+      margin: 15px 0 0 0; }
     .resume .resume-header a {
       text-decoration: none; }
     .resume .resume-header .author {
@@ -18,12 +25,6 @@ body {
     .resume .resume-header .author-metadata {
       font-size: .5em;
       margin: 0; }
-    .resume .resume-header:last-child:after {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 100%;
-      background: #000; }
 
 a.pdf-download {
   position: fixed;

@@ -16,7 +16,16 @@ body {
   box-shadow: 5px 5px 5px $shadow;
 
   .resume-header {
-    margin: 5px 0;
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: $black;
+      margin: 15px 0 0 0;
+    }
+
+    padding: 15px 0 0 0;
     text-align: center;
 
     a {
@@ -31,16 +40,6 @@ body {
     .author-metadata {
       font-size: .5em;
       margin: 0;
-    }
-
-    &:last-child {
-      &:after {
-        content: "";
-        display: block;
-        height: 1px;
-        width: 100%;
-        background: $black;
-      }
     }
   }
 }
