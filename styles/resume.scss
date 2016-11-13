@@ -1,0 +1,68 @@
+$white: #fff;
+$gray: #eee;
+$shadow: #ddd;
+$black: #000;
+$blue: #4d4dff;
+
+body {
+  background: $gray;
+  font: 36px Roboto, sans-serif;
+}
+
+.resume {
+  width: 960px;
+  background: $white;
+  margin: 15px auto;
+  box-shadow: 5px 5px 5px $shadow;
+
+  .resume-header {
+    margin: 5px 0;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+
+    .author {
+      font-size: 1em;
+      margin: 0;
+    }
+
+    .author-metadata {
+      font-size: .5em;
+      margin: 0;
+    }
+
+    &:last-child {
+      &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: $black;
+      }
+    }
+  }
+}
+
+a.pdf-download {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  text-color: $white;
+  font-size: .35em;
+  background-color: $blue;
+  padding: 5px;
+  box-shadow: 5px 5px 5px $shadow;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:visited {
+    color: $white;
+  }
+}

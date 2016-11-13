@@ -1,0 +1,45 @@
+body {
+  background: #eee;
+  font: 36px Roboto, sans-serif; }
+
+.resume {
+  width: 960px;
+  background: #fff;
+  margin: 15px auto;
+  box-shadow: 5px 5px 5px #ddd; }
+  .resume .resume-header {
+    margin: 5px 0;
+    text-align: center; }
+    .resume .resume-header a {
+      text-decoration: none; }
+    .resume .resume-header .author {
+      font-size: 1em;
+      margin: 0; }
+    .resume .resume-header .author-metadata {
+      font-size: .5em;
+      margin: 0; }
+    .resume .resume-header:last-child:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: #000; }
+
+a.pdf-download {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  text-color: #fff;
+  font-size: .35em;
+  background-color: #4d4dff;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #ddd; }
+  a.pdf-download:hover {
+    transform: scale(1.1); }
+  a.pdf-download:visited {
+    color: #fff; }
+
+/*# sourceMappingURL=resume.css.map */
