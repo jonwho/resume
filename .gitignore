@@ -3,6 +3,7 @@
 *.log
 *.out
 *.aux
+bower_components/
 node_modules/
 *.DS_STORE
 .sass-cache/
