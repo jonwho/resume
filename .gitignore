@@ -5,3 +5,4 @@
 *.aux
 node_modules/
 *.DS_STORE
+.sass-cache/
