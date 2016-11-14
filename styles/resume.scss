@@ -3,6 +3,7 @@ $gray: #eee;
 $shadow: #ddd;
 $black: #000;
 $blue: #4d4dff;
+$hyperlink-blue: #0645AD;
 
 body {
   background: $gray;
@@ -30,6 +31,10 @@ body {
 
     a {
       text-decoration: none;
+      color: $hyperlink-blue;
+      &:visited {
+        color: $hyperlink-blue;
+      }
     }
 
     .author {
@@ -49,28 +54,127 @@ body {
     }
 
     .resume-aside {
-      margin: 0 0 0 15px;
+      padding: 0 15px 0 5%;
       float: left;
       width: 20%;
 
+      p.topic {
+        margin: 0;
+        font-size: .7em;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
       .subsection {
-        h1 {
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          margin: 15px 0 0 0;
+        }
+
+        h1.title {
           margin: 0;
           font-size: .5em;
+          font-weight: 400;
           text-transform: uppercase;
+        }
+
+        p.description {
+          margin: 0;
+          font-size: .38em;
+          font-weight: 300;
+
+          a {
+            text-decoration: none;
+            color: $hyperlink-blue;
+
+            &:visited {
+              color: $hyperlink-blue;
+            }
+          }
         }
       }
     }
 
     .resume-main {
-      margin: 0 15px 0 0;
+      padding: 0 5% 0 0;
       float: left;
-      width: 75%;
+      width: 68%;
+
+      p.topic {
+        margin: 0;
+        font-size: .7em;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
 
       .subsection {
-        h1 {
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          margin: 15px 0 0 0;
+        }
+
+        ul.job {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+
+          li {
+            ul:nth-child(1) {
+              font-size: .5em;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              display: inline;
+
+              li {
+                &:first-child {
+                  text-transform: uppercase;
+                  font-weight: 800;
+
+                  &:after {
+                    content: " \2223 ";
+                    font-size: 1.5em;
+                  }
+                }
+
+                &:last-child {
+                  text-transform: capitalize;
+                }
+
+              }
+            }
+
+            ul:nth-child(2) {
+              font-size: .5em;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              display: inline;
+            }
+
+            ul:nth-child(3) {
+              font-size: .5em;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+
+        h1.title {
+          margin: 0;
           font-size: .5em;
+          font-weight: 400;
           text-transform: uppercase;
+        }
+
+        p.description {
+          margin: 0;
+          font-size: .38em;
+          font-weight: 300;
         }
       }
     }

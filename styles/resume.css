@@ -18,7 +18,10 @@ body {
       background: #000;
       margin: 15px 0 0 0; }
     .resume .resume-header a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #0645AD; }
+      .resume .resume-header a:visited {
+        color: #0645AD; }
     .resume .resume-header .author {
       font-size: 1em;
       margin: 0; }
@@ -28,20 +31,84 @@ body {
   .resume .resume-body p {
     margin: 0; }
   .resume .resume-body .resume-aside {
-    margin: 0 0 0 15px;
+    padding: 0 15px 0 5%;
     float: left;
     width: 20%; }
-    .resume .resume-body .resume-aside .subsection h1 {
+    .resume .resume-body .resume-aside p.topic {
+      margin: 0;
+      font-size: .7em;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .resume .resume-body .resume-aside .subsection:after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin: 15px 0 0 0; }
+    .resume .resume-body .resume-aside .subsection h1.title {
       margin: 0;
       font-size: .5em;
+      font-weight: 400;
       text-transform: uppercase; }
+    .resume .resume-body .resume-aside .subsection p.description {
+      margin: 0;
+      font-size: .38em;
+      font-weight: 300; }
+      .resume .resume-body .resume-aside .subsection p.description a {
+        text-decoration: none;
+        color: #0645AD; }
+        .resume .resume-body .resume-aside .subsection p.description a:visited {
+          color: #0645AD; }
   .resume .resume-body .resume-main {
-    margin: 0 15px 0 0;
+    padding: 0 5% 0 0;
     float: left;
-    width: 75%; }
-    .resume .resume-body .resume-main .subsection h1 {
-      font-size: .5em;
+    width: 68%; }
+    .resume .resume-body .resume-main p.topic {
+      margin: 0;
+      font-size: .7em;
+      font-weight: 500;
       text-transform: uppercase; }
+    .resume .resume-body .resume-main .subsection:after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin: 15px 0 0 0; }
+    .resume .resume-body .resume-main .subsection ul.job {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) {
+        font-size: .5em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline; }
+        .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) li:first-child {
+          text-transform: uppercase;
+          font-weight: 800; }
+          .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) li:first-child:after {
+            content: " \2223 ";
+            font-size: 1.5em; }
+        .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) li:last-child {
+          text-transform: capitalize; }
+      .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(2) {
+        font-size: .5em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline; }
+      .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(3) {
+        font-size: .5em;
+        margin: 0;
+        padding: 0; }
+    .resume .resume-body .resume-main .subsection h1.title {
+      margin: 0;
+      font-size: .5em;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .resume .resume-body .resume-main .subsection p.description {
+      margin: 0;
+      font-size: .38em;
+      font-weight: 300; }
 
 /*
  * This one is really cool to know when floating items.
