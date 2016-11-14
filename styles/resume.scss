@@ -59,7 +59,6 @@ body {
       width: 20%;
 
       p.topic {
-        margin: 0;
         font-size: .7em;
         font-weight: 500;
         text-transform: uppercase;
@@ -103,7 +102,6 @@ body {
       width: 68%;
 
       p.topic {
-        margin: 0;
         font-size: .7em;
         font-weight: 500;
         text-transform: uppercase;
@@ -123,14 +121,16 @@ body {
           list-style-type: none;
 
           li {
+            margin: 0;
+            padding: 0;
+
             ul:nth-child(1) {
+              line-height: 0px;
               font-size: .5em;
               list-style-type: none;
-              margin: 0;
-              padding: 0;
-              display: inline;
 
               li {
+                display: inline;
                 &:first-child {
                   text-transform: uppercase;
                   font-weight: 800;
@@ -144,28 +144,44 @@ body {
                 &:last-child {
                   text-transform: capitalize;
                 }
-
               }
             }
 
             ul:nth-child(2) {
-              font-size: .5em;
+              font-size: .42em;
               list-style-type: none;
-              margin: 0;
-              padding: 0;
-              display: inline;
+
+              li {
+                display: inline;
+
+                &:first-child {
+                  text-transform: uppercase;
+                  font-weight: 500;
+
+                  &:after {
+                    content: " \2223 ";
+                    font-size: 1.5em;
+                  }
+                }
+
+                &:last-child {
+                  text-transform: capitalize;
+                }
+              }
             }
 
             ul:nth-child(3) {
-              font-size: .5em;
-              margin: 0;
-              padding: 0;
+              font-size: .38em;
+
+              li {
+                list-style-type: disc;
+                margin: 0 0 0 7%;
+              }
             }
           }
         }
 
         h1.title {
-          margin: 0;
           font-size: .5em;
           font-weight: 400;
           text-transform: uppercase;
