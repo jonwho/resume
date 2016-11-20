@@ -103,9 +103,9 @@ body {
     }
 
     .resume-main {
-      padding: 0 5% 0 0;
+      padding: 0 5% 0 5%;
       float: left;
-      width: 68%;
+      width: 60%;
 
       p.topic {
         font-size: .7em;
@@ -131,6 +131,9 @@ body {
             padding: 0;
 
             ul:nth-child(1) {
+              margin: 0;
+              padding: 0;
+
               line-height: 0px;
               font-size: .5em;
               list-style-type: none;
@@ -144,6 +147,7 @@ body {
                   &:after {
                     content: " \2223 ";
                     font-size: 1.5em;
+                    font-weight: 100;
                   }
                 }
 
@@ -154,6 +158,8 @@ body {
             }
 
             ul:nth-child(2) {
+              margin: 0;
+              padding: 0;
               font-size: .42em;
               list-style-type: none;
 
@@ -181,7 +187,6 @@ body {
 
               li {
                 list-style-type: disc;
-                margin: 0 0 0 7%;
               }
             }
           }
