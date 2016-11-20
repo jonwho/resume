@@ -192,9 +192,20 @@ body {
           }
         }
 
+        ul.project-list {
+          margin: 0;
+
+          font-size: .38em;
+
+          li {
+            list-style-type: disc;
+          }
+        }
+
         h1.title {
+          margin: 0;
           font-size: .5em;
-          font-weight: 400;
+          font-weight: 800;
           text-transform: uppercase;
         }
 

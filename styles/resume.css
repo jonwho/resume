@@ -117,9 +117,15 @@ body {
           font-size: .38em; }
           .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(3) li {
             list-style-type: disc; }
+    .resume .resume-body .resume-main .subsection ul.project-list {
+      margin: 0;
+      font-size: .38em; }
+      .resume .resume-body .resume-main .subsection ul.project-list li {
+        list-style-type: disc; }
     .resume .resume-body .resume-main .subsection h1.title {
+      margin: 0;
       font-size: .5em;
-      font-weight: 400;
+      font-weight: 800;
       text-transform: uppercase; }
     .resume .resume-body .resume-main .subsection p.description {
       margin: 0;
