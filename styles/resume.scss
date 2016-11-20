@@ -35,6 +35,9 @@ body {
       &:visited {
         color: $hyperlink-blue;
       }
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     .author {
@@ -90,6 +93,9 @@ body {
 
             &:visited {
               color: $hyperlink-blue;
+            }
+            &:hover {
+              text-decoration: underline;
             }
           }
         }

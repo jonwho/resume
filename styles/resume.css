@@ -22,6 +22,8 @@ body {
       color: #0645AD; }
       .resume .resume-header a:visited {
         color: #0645AD; }
+      .resume .resume-header a:hover {
+        text-decoration: underline; }
     .resume .resume-header .author {
       font-size: 1em;
       margin: 0; }
@@ -57,6 +59,8 @@ body {
         color: #0645AD; }
         .resume .resume-body .resume-aside .subsection p.description a:visited {
           color: #0645AD; }
+        .resume .resume-body .resume-aside .subsection p.description a:hover {
+          text-decoration: underline; }
   .resume .resume-body .resume-main {
     padding: 0 5% 0 0;
     float: left;
