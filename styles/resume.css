@@ -2,6 +2,9 @@ body {
   background: #eee;
   font: 36px Roboto, sans-serif; }
 
+span.weak {
+  font-weight: 100; }
+
 .resume {
   width: 960px;
   background: #fff;
@@ -127,6 +130,11 @@ body {
       font-size: .5em;
       font-weight: 800;
       text-transform: uppercase; }
+      .resume .resume-body .resume-main .subsection h1.title a {
+        text-decoration: none;
+        color: #0645AD; }
+        .resume .resume-body .resume-main .subsection h1.title a:hover {
+          text-decoration: underline; }
     .resume .resume-body .resume-main .subsection p.description {
       margin: 0;
       font-size: .38em;

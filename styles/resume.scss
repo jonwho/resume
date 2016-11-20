@@ -10,6 +10,10 @@ body {
   font: 36px Roboto, sans-serif;
 }
 
+span.weak {
+  font-weight: 100;
+}
+
 .resume {
   width: 960px;
   background: $white;
@@ -207,6 +211,15 @@ body {
           font-size: .5em;
           font-weight: 800;
           text-transform: uppercase;
+
+          a {
+            text-decoration: none;
+            color: $hyperlink-blue;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
 
         p.description {
