@@ -1,0 +1,175 @@
+body {
+  background: #eee;
+  font: 36px Roboto, sans-serif; }
+
+span.weak {
+  font-weight: 100; }
+
+.resume {
+  width: 960px;
+  background: #fff;
+  margin: 15px auto;
+  box-shadow: 5px 5px 5px #ddd; }
+  .resume .resume-header {
+    padding: 15px 0 15px 0;
+    text-align: center; }
+    .resume .resume-header:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: #000;
+      margin: 15px 0 0 0; }
+    .resume .resume-header a {
+      text-decoration: none;
+      color: #0645AD; }
+      .resume .resume-header a:visited {
+        color: #0645AD; }
+      .resume .resume-header a:hover {
+        text-decoration: underline; }
+    .resume .resume-header .author {
+      font-size: 1em;
+      margin: 0; }
+    .resume .resume-header .author-metadata {
+      font-size: .5em;
+      margin: 0; }
+  .resume .resume-body p {
+    margin: 0; }
+  .resume .resume-body .resume-aside {
+    padding: 0 15px 0 5%;
+    float: left;
+    width: 20%; }
+    .resume .resume-body .resume-aside p.topic {
+      font-size: .7em;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .resume .resume-body .resume-aside .subsection:after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin: 15px 0 0 0; }
+    .resume .resume-body .resume-aside .subsection h1.title {
+      margin: 0;
+      font-size: .5em;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .resume .resume-body .resume-aside .subsection p.description {
+      margin: 0;
+      font-size: .38em;
+      font-weight: 300; }
+      .resume .resume-body .resume-aside .subsection p.description a {
+        text-decoration: none;
+        color: #0645AD; }
+        .resume .resume-body .resume-aside .subsection p.description a:visited {
+          color: #0645AD; }
+        .resume .resume-body .resume-aside .subsection p.description a:hover {
+          text-decoration: underline; }
+  .resume .resume-body .resume-main {
+    padding: 0 5% 0 5%;
+    float: left;
+    width: 60%; }
+    .resume .resume-body .resume-main p.topic {
+      font-size: .7em;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .resume .resume-body .resume-main .subsection:after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin: 15px 0 0 0; }
+    .resume .resume-body .resume-main .subsection ul.job {
+      margin: .12em 0;
+      padding: 0;
+      list-style-type: none; }
+      .resume .resume-body .resume-main .subsection ul.job li {
+        margin: .12em 0;
+        padding: 0; }
+        .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) {
+          margin: .12em 0;
+          padding: 0;
+          line-height: 0px;
+          font-size: .5em;
+          list-style-type: none; }
+          .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) li {
+            display: inline; }
+            .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) li:first-child {
+              text-transform: uppercase;
+              font-weight: 800; }
+              .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) li:first-child:after {
+                content: " \2223 ";
+                font-size: 1.5em;
+                font-weight: 100; }
+            .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(1) li:last-child {
+              text-transform: capitalize; }
+        .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(2) {
+          padding: 0;
+          font-size: .42em;
+          list-style-type: none; }
+          .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(2) li {
+            display: inline; }
+            .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(2) li:first-child {
+              text-transform: uppercase;
+              font-weight: 500; }
+              .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(2) li:first-child:after {
+                content: " \2223 ";
+                font-size: 1.5em; }
+            .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(2) li:last-child {
+              text-transform: capitalize; }
+        .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(3) {
+          font-size: .38em; }
+          .resume .resume-body .resume-main .subsection ul.job li ul:nth-child(3) li {
+            margin: .12em 0;
+            list-style-type: disc; }
+    .resume .resume-body .resume-main .subsection ul.project-list {
+      margin: .12em 0;
+      font-size: .38em; }
+      .resume .resume-body .resume-main .subsection ul.project-list li {
+        margin: .12em 0;
+        list-style-type: disc; }
+    .resume .resume-body .resume-main .subsection h1.title {
+      margin: 0;
+      font-size: .5em;
+      font-weight: 800;
+      text-transform: uppercase; }
+      .resume .resume-body .resume-main .subsection h1.title a {
+        text-decoration: none;
+        color: #0645AD; }
+        .resume .resume-body .resume-main .subsection h1.title a:hover {
+          text-decoration: underline; }
+    .resume .resume-body .resume-main .subsection p.description {
+      margin: 0;
+      font-size: .38em;
+      font-weight: 300; }
+
+/*
+ * This one is really cool to know when floating items.
+ * Need this to combat zero-height container problems.
+ */
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after {
+    clear: both; }
+
+a.pdf-download {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: .35em;
+  background-color: #4d4dff;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #ddd; }
+  a.pdf-download:hover {
+    transform: scale(1.1); }
+  a.pdf-download:visited {
+    color: #fff; }
+
+/*# sourceMappingURL=resume.css.map */

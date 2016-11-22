@@ -1,222 +1,258 @@
-% resume.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%https://preview.overleaf.com/public/zszkcsshbrnd/images/ac0704b40927d1c953dc8b6616a392a8d3fe65b4.jpeg
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
 %
-% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
-% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
-% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
-% (c) 2009-2012 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
-%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+\documentclass[]{deedy-resume-openfont}
 
-\documentclass[letterpaper,11pt]{article}
-
-%-----------------------------------------------------------
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage[pdftex]{hyperref}
-\hypersetup{
-    colorlinks,%
-    citecolor=black,%
-    filecolor=black,%
-    linkcolor=black,%
-    urlcolor=black 
-    %urlcolor=mygreylink     % can put red here to better visualize the links
-}
-\urlstyle{same}
-\definecolor{mygrey}{gray}{.85}
-\definecolor{mygreylink}{gray}{.40}
-\textheight=9.0in
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{0.375in}
-\addtolength{\textwidth}{0.5in}
-\addtolength{\topmargin}{-.375in}
-\addtolength{\textheight}{0.75in}
-
-%-----------------------------------------------------------
-%Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-
-\newcommand{\ressubsubheading}[2]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-		\textit{#1} & \textit{#2} \\
-\end{tabular*}\vspace{-6pt}}
-%-----------------------------------------------------------
-
-%-----------------------------------------------------------
-%General Resume Tips
-%   No periods!  Technically, nothing in this document is a full sentence.
-%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
-%   More tips on bottom of this LaTeX document.
-%-----------------------------------------------------------
 
 \begin{document}
 
-\newcommand{\mywebheader}{
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-	\textbf{\href{http://jonwho.github.com}{\LARGE Jonathan Wilson ho}} &
-	\href{mailto:housuilun@yahoo.com}{housuilun@yahoo.com}\\
-	{\footnotesize \texttt{\colorbox{yellow}{[3833 Nobel Dr San Diego CA 92122\&
-						530-320-7863]}}} &
-	\href{http://jonwho.github.com}{http://jonwho.github.com} \\
-	\end{tabular*}
-\\
-\vspace{0.1in}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
 
-% CHANGE HEADER SOURCE HERE
-\mywebheader
-
-%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Education}
-  \begin{itemize}
-    \item
-    \ressubheading{\href{http://www.ucsd.edu}{University of California, San Diego}}{La Jolla, CA}{\href{http://www.cse.ucsd.edu}{Bachelor of Science in Computer Science and Engineering};}{Expected Graduation: June 2015}
-    { \footnotesize
-      \begin{itemize}
-        \resitem{Courses: Object Oriented Design, Software Testing, Android Development, Unix Lab, Data Structures, Algorithms, Computer Architecture, Operating Systems, Programming Paradigms, Compilers, Ubiquitous Computing, Computer Networks, Computer Security, Database Theory}
-      \end{itemize}
-    }
-  \end{itemize} % End Education list
-
-%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Experience}
-  \begin{itemize}
-    \item 
-    \ressubheading{Sony Network Entertainment International}{San Diego, CA}{Software Architect Intern}{June 2014 -- Sept. 2014}
-    { \footnotesize
-      \begin{itemize}
-        \resitem{Worked on continuous integration for the network platform based on the OAuth 2.0 protocol}
-	\resitem{Created client management tool with AngularJS to consume REStful resources off the network platform}
-        \resitem{Participated in SNEI Hackathon developing quick message boardto consolidate ideas in active and live fashion}
-      \end{itemize}
-    }
-    \item
-    \ressubheading{BridgeCrest Medical}{San Diego, CA}{Full Stack Developer}{Oct. 2013 -- April 2014}
-    { \footnotesize
-      \begin{itemize}
-	\resitem{Created web portal application in Ruby on Rails and delegatedtasks on weekly basis}
-	\resitem{Full stack development utilizing Bootstrap and Rails
-framework}	
-        \resitem{Maintain application on Linux server and deploy test applications to Heroku for quick presentations}
-      \end{itemize}
-    }
-    \item
-    \ressubheading{Life Technologies (now ThermoFischer)}{Carlsbad, CA}{Software Engineering Intern}{June 2013 -- Sept. 2013}
-    { \footnotesize
-      \begin{itemize}
-	\resitem{Developed performance tests in RHEL for application deployment and integration on Amazon Web Services}
-	\resitem{Used AWS Java APIs and tested database weekly while learning about SOAP/REST on the web stack}
-	\resitem{Became familiar with Agile Development using Scrum and updated Global IT functions resource}
-      \end{itemize}
-    }
-  \end{itemize}  % End Experience list
-
-%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Skills}
-  \begin{description}
-    \item[Programming Languages:]
-    { \footnotesize
-      C/C++, C\#, Java, Ruby, JavaScript
-    }
-    \item[Web Development:]
-    { \footnotesize
-      AngularJS and Rails
-    }
-    \item[Devices and OS:]
-    { \footnotesize
-      Windows, OS X, *nix (Ubuntu preferred), Android
-    }
-    \item[Miscellaneous:]
-    { \footnotesize
-      Bash, Git, JUnit, MySQL, MongoDB, XML, JSON, Anroid, Cucumber, Jasmine
-    }
-  \end{description} % End Skills list
-
-%%%%%%%%%%%%%%%%%%%%%%
-\resheading{\href{https://www.github.com/jonwho?tab=repositories}{Projects}}
-  \begin{itemize}
-    \item
-    \ressubheading{Anagram Finder}
-    { \footnotesize 
-      \begin{itemize}
-        \resitem{Program lets user find anagrams for a word they input to the terminal and continues to do so until user exits program}
-        \resitem{Written in C and SPARC Assembly using C standard libraries
-          and my own created structs to encapsulate data}
-        \resitem{Involved file creation and manipulation at runtime by
-          allocating dynamic memory}
-      \end{itemize}
-    }
-    \item
-    \ressubheading{Scott the Intern}
-    { \footnotesize 
-      \begin{itemize}
-        \resitem{Playable video game on Xbox and PC written in C\# using XNA
-            Game Studios 3.0}
-        \resitem{Implemented free world movement in 2D sprite sheets and
-            fighting sequences upon enemy collision}
-        \resitem{Delegated tasks on weekly basis as team manager and
-            coordinate team efforts}
-        \resitem{Leveraged game graphics and audio through XNA APIs and made
-            custom map maker to speed up development}
-      \end{itemize}
-    }
-    \item
-    \ressubheading{MyCity}
-    { \footnotesize 
-      \begin{itemize}
-        \resitem{Android app used to socialize with your friends from Gmail
-            and pinpoint their location relative to yours}
-        \resitem{Focused on GoogleTalk and RTMP APIs in Java and software
-            engineering principles like DRY and singleton pattern}
-        \resitem{Worked with multiple threads in Java and used singleton
-            pattern to synchronize data and avoid thread locks}
-        \resitem{Handled shout feature which was group messaging with
-            friends who are within a mile of user}
-      \end{itemize}
-    }
-  \end{itemize} % End Projects list
-\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-% GENERAL RESUME NOTES %
-%%%%%%%%%%%%%%%%%%%%%%%%
-Need to brush up on the skills section?  Here are some really good ideas:
+\namesection{Jonathan}{W. Ho}{ \urlstyle{same}\url{http://jonwho.github.io} \\
+\href{mailto:jonwho.contact@gmail.com}{jonwho.contact@gmail.com} | 530.320.7863
+}
 
-- Communication: The ability to express and interpret ideas and convey knowledge. 
-Skills like speaking effectively, writing concisely, listening attentively, expressing ideas, 
-reporting information, editing, interviewing, and facilitating group discussion. 
- 
-- Research and Planning: The ability to search for specific knowledge and formulate a 
-program for a definite course of action. Skills like forecasting, predicting, identifying 
-issues, finding alternatives, gathering information, solving problems, setting goals, 
-extracting information, and developing strategies. 
- 
-- Human Relations: The ability to apply interpersonal skills to resolve conflict, relate to 
-people, and help people. Skills like providing support for others, listening, delegating 
-with respect, representing others, asserting, developing rapport, and perceiving 
-feelings. 
- 
-- Management, Organization, Leadership: The ability to supervise others and guide 
-individuals and groups towards the completion of tasks. Skills like managing groups, 
-selling ideas, making decisions, managing conflict, coordinating tasks, teaching, 
-enlisting help. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Source: 
-http://www.squawkfox.com/2009/03/08/6-action-words-that-make-your-resume-rock/
+\begin{minipage}[t]{0.33\textwidth}
 
-Other Resources: 
-http://www.tvmier.com/Resume_Education.html
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Education}
+
+\subsection{UC San Diego}
+\descript{Bachelor of Science \\ in Computer Science \\ and Engineering}
+\location{Grad. June 2015 | La Jolla, CA}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+GitHub://\href{https://github.com/jonwho}{\custombold{jonwho}} \\
+LinkedIn://\href{https://www.linkedin.com/in/jonwho}{\custombold{jonwho}} \\
+Twitter://\href{https://twitter.com/lj080805}{\custombold{@lj080805}} \\
+WebApp://\href{https://cse134bteam3-hw5.firebaseapp.com/}{\custombold{CoinFlip}} \\
+ChatApp://\href{https://playwithfire.firebaseapp.com/}{\custombold{SimpleChat}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Key Courses}
+Software Engineering \\
+Software Tools \& Technology \\
+Android Development \\
+Data Structures \\
+Operating Systems \\
+Algorithms \& Design \\
+Computer Architecture \\
+Compiler Construction \\
+Functional Programming \\
+Ubiquitous Computing \\
+Server Side Applications \\
+Mobile Applications \\
+Data Mining and Predictive Analysis
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+Java \textbullet{} JavaScript \textbullet{} Ruby \\
+\sectionsep
+\subsection{Web Development}
+AngularJS \textbullet{} Rails \textbullet{} HTML \textbullet{} CSS \\
+Sass \textbullet{} Node.js \textbullet{} Express.js \\
+Yeoman \textbullet{} Grunt \textbullet{} Gulp \textbullet{} Bower \\
+ReactJS \textbullet{} ES6 \textbullet{} Babel \\
+Bootstrap \textbullet{} Material Design \\
+\sectionsep
+\subsection{Editors}
+vi \textbullet{} Vim \textbullet{} Eclipse \textbullet{} Sublime Text \\
+IntelliJ IDEA \textbullet{} Visual Studios \\
+Android Studio \textbullet{} Unity \textbullet{} Atom
+\sectionsep
+\subsection{Miscellaneous}
+Git \textbullet{} XML \textbullet{} MySQL \textbullet{} JSON \\
+UML \textbullet{} Jasmine \textbullet{}
+Heroku \textbullet{} Firebase \\
+GitHub \textbullet{} Travis CI \textbullet{} Ubuntu \textbullet{} CentOS \\
+Arch Linux \textbullet{} PostgreSQL \textbullet{} Bash
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Fullscreen Media}
+\descript{| Full Stack Software Engineer}
+\location{August 2015 – Present | Playa Vista, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Develop tools in and around Video.js for HTML5 video support
+\item Write RSpec3 tests covering unit and feature testing
+\item Client side quality control tools written in Angular/React
+\item Automate asset workflows from ingestion to publishing
+\item Support VTT and XML captions with conversion and publishing
+\item Create Sidekiq workers to run scheduled jobs from Redis queue
+\item Complete redesign of UI to optimize UX and development time
+\item Migrate data so new references allow tech ops to monitor progress
+\item Make use of AWS API S3, SNS, and SQS to connect internal services
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Sony Network Entertainment}
+\descript{| Software Architect Intern}
+\location{June 2014 – Sep 2014 | San Diego, CA}
+\begin{tightemize}
+\item Worked on continuous integration for OAuth 2.0 on the network platform
+\item Created internal application with AngularJS to improve client integration
+\item Made a message board to gather and discuss ideas in hackathon with MEAN
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BridgeCrest Medical}
+\descript{| Software Engineer}
+\location{Oct 2013 – April 2014 | San Diego, CA}
+\begin{tightemize}
+\item Created web portal application in Ruby on Rails and delegated tasks
+\item Maintain application on server and deploy test applications on Heroku
+\item Started work on REST APIs for mobile application to use
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Thermo Fisher Scientific}
+\descript{| Software Development Intern}
+\location{June 2013 – Sep 2013 | Carlsbad, CA}
+\begin{tightemize}
+\item Developed performance tests for application on Amazon Web Services
+\item Updated Global IT functions resource page to improve employee experience
+\item Used AWS Java APIs to test data from SOAP/REST endpoints
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\href{http://augmonted.github.io}{\runsubsection{Augmonted}} \\
+\begin{tightemize}
+\item Voted 1st place app in CSE190 Mobile Development 2015 class
+\item Utilizes Qualcomm Vuforia API for augmented reality
+\item User interface with focus on Google's Material Design
+\item Log in with either Facebook Graph API or email verification
+\item Amazon EC2 instance hosts both MySQL and PHP middleware
+\end{tightemize}
+\sectionsep
+
+\href{https://www.youtube.com/watch?v=mYUiSeqqgDY&list=PLbbCsk7MUIGfXpnd9XN-pBeCd6ixuCQ2X}{\runsubsection{Speedy Type}} \\
+\begin{tightemize}
+\item Designed to aid those suffering from Locked-In Syndrome
+\item Uses both Microsoft Surface and EyeTribe technology
+\item Allows patient to initiate converstaion with loved ones
+\item 3 to 5 times faster than traditional means of communication
+\end{tightemize}
+\sectionsep
+
+\href{https://github.com/jonwho/ScottTheIntern}{\runsubsection{Scott the Intern}} \\
+\begin{tightemize}
+\item Video game for Xbox and PC made with XNA Game Studios 3.0
+\item Implemented free world movement in 2D sprite sheets
+\item Fight system was turn based and included sprite animations
+\item Maps for the game were made using a custom made map-maker
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \runsubsection{My City} \\
+% \begin{tightemize}
+% \item Android app used to socialize with your friends from Gmail
+% \item App puts your friends locations into Google Maps
+% \item Focused on GoogleTalk and RTMP APIs in Java
+% \item Made group chat feature with any friends within 1 mile
+% \end{tightemize}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
