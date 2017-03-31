@@ -6,9 +6,6 @@ html {
 body {
   background: #eee; }
 
-span.weak {
-  font-weight: 100; }
-
 .resume {
   width: 960px;
   background: #fff;
@@ -145,6 +142,9 @@ span.weak {
       font-size: .38em;
       font-weight: 300; }
 
+span.weak {
+  font-weight: 100; }
+
 /*
  * This one is really cool to know when floating items.
  * Need this to combat zero-height container problems.
@@ -176,4 +176,4 @@ a.pdf-download {
   a.pdf-download:visited {
     color: #fff; }
 
-/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,35 @@
+.resume-header {
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: $black;
+    margin: 15px 0 0 0;
+  }
+
+  padding: 15px 0 15px 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $hyperlink-blue;
+    &:visited {
+      color: $hyperlink-blue;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .author {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .author-metadata {
+    font-size: .5em;
+    margin: 0;
+  }
+}
+

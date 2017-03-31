@@ -1,0 +1,9 @@
+.resume {
+  width: 960px;
+  background: $white;
+  margin: 15px auto;
+  box-shadow: 5px 5px 5px $shadow;
+
+  @import 'resume-header';
+  @import 'resume-body';
+}

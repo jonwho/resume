@@ -1,0 +1,48 @@
+@import "colors";
+@import "globals";
+@import "resume";
+
+span.weak {
+  font-weight: 100;
+}
+
+/*
+ * This one is really cool to know when floating items.
+ * Need this to combat zero-height container problems.
+ */
+.clearfix {
+  zoom: 1;
+
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+a.pdf-download {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $white;
+  font-size: .35em;
+  background-color: $blue;
+  padding: 5px;
+  box-shadow: 5px 5px 5px $shadow;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:visited {
+    color: $white;
+  }
+}
