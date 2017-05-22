@@ -1,0 +1,10 @@
+{
+  "presets": [
+    // Let us use ES6 syntax
+    ["es2015", {"modules": false}],
+
+    // Transpiles React components to JavaScript
+    "react"
+  ],
+  plugins: []
+}

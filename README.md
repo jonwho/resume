@@ -15,10 +15,11 @@ This serves as the repo for resume revision and the static site.
 
 # Development
 
-* `http-server` to serve pages
+* `yarn build` to compile React components
+* `yarn start` to serve page
 * `sass --watch styles/` to preprocess to css
 
-# TODO
-
-* Add some dev tools gulp/grunt/webpack?
-* File watchers and reloaders would be nice in one tool
+# WIP
+- Hot Module Reloading
+- Compile sass
+- Use styles as imports
