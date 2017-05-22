@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-      <div>
-        <h1>Header</h1>
-        <h1>Header</h1>
-        <h1>Header</h1>
-      </div>
+      <section className='resume-header'>
+        <p className="author"><span className="weak">Jonathan</span> W. Ho</p>
+        <p className="author-metadata"><a href="http://jonwho.github.io">http://jonwho.github.io</a></p>
+        <p className="author-metadata"><a href="mailto:jonwho.contact@gmail.com">jonwho.contact@gmail.com</a> &#124; <a href="tel:1-530-320-7863">530.320.7863</a></p>
+      </section>
     );
   }
 }

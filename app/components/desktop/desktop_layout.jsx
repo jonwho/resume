@@ -6,7 +6,7 @@ import Body from './body';
 class DesktopLayout extends Component {
   render() {
     return (
-      <div>
+      <div className='resume'>
         <Header />
         <Body />
       </div>
