@@ -10112,6 +10112,11 @@ var Header = function (_Component) {
             { href: 'tel:1-530-320-7863' },
             '530.320.7863'
           )
+        ),
+        _react2.default.createElement(
+          'span',
+          { className: 'last-updated' },
+          'Last Updated on 31st March 2017'
         )
       );
     }

@@ -12,6 +12,7 @@ body {
   margin: 15px auto;
   box-shadow: 5px 5px 5px #ddd; }
   .resume .resume-header {
+    position: relative;
     padding: 15px 0 15px 0;
     text-align: center; }
     .resume .resume-header:after {
@@ -34,6 +35,12 @@ body {
     .resume .resume-header .author-metadata {
       font-size: .5em;
       margin: 0; }
+    .resume .resume-header span.last-updated {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: .3em;
+      font-weight: 100; }
   .resume .resume-body p {
     margin: 0; }
   .resume .resume-body .resume-aside {

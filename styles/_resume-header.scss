@@ -1,4 +1,6 @@
 .resume-header {
+  position: relative;
+
   &:after {
     content: "";
     display: block;
@@ -30,6 +32,14 @@
   .author-metadata {
     font-size: .5em;
     margin: 0;
+  }
+
+  span.last-updated {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: .3em;
+    font-weight: 100;
   }
 }
 
