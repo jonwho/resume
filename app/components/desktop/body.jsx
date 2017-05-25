@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Aside from './aside';
-import MainSection from './main_section';
-import PdfVersion from './pdf_version';
+import Aside from './Aside';
+import MainSection from './MainSection';
+import PdfVersion from './PdfVersion';
 
 class Body extends Component {
   render() {

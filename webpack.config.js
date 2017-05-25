@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './app/resume.jsx',
+  entry: './app/Resume.jsx',
   resolve: {
     extensions: ['.js', '.jsx']
   },

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 89);
+/******/ 	return __webpack_require__(__webpack_require__.s = 83);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9530,9 +9530,9 @@ var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _desktop_layout = __webpack_require__(85);
+var _DesktopLayout = __webpack_require__(86);
 
-var _desktop_layout2 = _interopRequireDefault(_desktop_layout);
+var _DesktopLayout2 = _interopRequireDefault(_DesktopLayout);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9556,7 +9556,7 @@ var LayoutManager = function (_Component) {
 
     /* Always render DesktopLayout for now */
     value: function render() {
-      return _react2.default.createElement(_desktop_layout2.default, null);
+      return _react2.default.createElement(_DesktopLayout2.default, null);
     }
   }]);
 
@@ -9577,6 +9577,58 @@ module.exports = __webpack_require__(119);
 
 /***/ }),
 /* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(13);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(82);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _LayoutManager = __webpack_require__(81);
+
+var _LayoutManager2 = _interopRequireDefault(_LayoutManager);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Resume = function (_Component) {
+  _inherits(Resume, _Component);
+
+  function Resume() {
+    _classCallCheck(this, Resume);
+
+    return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).apply(this, arguments));
+  }
+
+  _createClass(Resume, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(_LayoutManager2.default, null);
+    }
+  }]);
+
+  return Resume;
+}(_react.Component);
+
+document.addEventListener("DOMContentLoaded", function () {
+  _reactDom2.default.render(_react2.default.createElement(Resume, null), document.getElementById('root'));
+});
+
+/***/ }),
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9917,7 +9969,7 @@ var Aside = function (_Component) {
 exports.default = Aside;
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9933,17 +9985,17 @@ var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _aside = __webpack_require__(83);
+var _Aside = __webpack_require__(84);
 
-var _aside2 = _interopRequireDefault(_aside);
+var _Aside2 = _interopRequireDefault(_Aside);
 
-var _main_section = __webpack_require__(87);
+var _MainSection = __webpack_require__(88);
 
-var _main_section2 = _interopRequireDefault(_main_section);
+var _MainSection2 = _interopRequireDefault(_MainSection);
 
-var _pdf_version = __webpack_require__(88);
+var _PdfVersion = __webpack_require__(89);
 
-var _pdf_version2 = _interopRequireDefault(_pdf_version);
+var _PdfVersion2 = _interopRequireDefault(_PdfVersion);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9968,9 +10020,9 @@ var Body = function (_Component) {
       return _react2.default.createElement(
         'main',
         { className: 'resume-body clearfix' },
-        _react2.default.createElement(_aside2.default, null),
-        _react2.default.createElement(_main_section2.default, null),
-        _react2.default.createElement(_pdf_version2.default, null)
+        _react2.default.createElement(_Aside2.default, null),
+        _react2.default.createElement(_MainSection2.default, null),
+        _react2.default.createElement(_PdfVersion2.default, null)
       );
     }
   }]);
@@ -9981,7 +10033,7 @@ var Body = function (_Component) {
 exports.default = Body;
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9997,13 +10049,13 @@ var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _header = __webpack_require__(86);
+var _Header = __webpack_require__(87);
 
-var _header2 = _interopRequireDefault(_header);
+var _Header2 = _interopRequireDefault(_Header);
 
-var _body = __webpack_require__(84);
+var _Body = __webpack_require__(85);
 
-var _body2 = _interopRequireDefault(_body);
+var _Body2 = _interopRequireDefault(_Body);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10028,8 +10080,8 @@ var DesktopLayout = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'resume' },
-        _react2.default.createElement(_header2.default, null),
-        _react2.default.createElement(_body2.default, null)
+        _react2.default.createElement(_Header2.default, null),
+        _react2.default.createElement(_Body2.default, null)
       );
     }
   }]);
@@ -10040,7 +10092,7 @@ var DesktopLayout = function (_Component) {
 exports.default = DesktopLayout;
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10128,7 +10180,7 @@ var Header = function (_Component) {
 exports.default = Header;
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10596,7 +10648,7 @@ var MainSection = function (_Component) {
 exports.default = MainSection;
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10644,58 +10696,6 @@ var PdfVersion = function (_Component) {
 }(_react.Component);
 
 exports.default = PdfVersion;
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(13);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(82);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _layout_manager = __webpack_require__(81);
-
-var _layout_manager2 = _interopRequireDefault(_layout_manager);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Resume = function (_Component) {
-  _inherits(Resume, _Component);
-
-  function Resume() {
-    _classCallCheck(this, Resume);
-
-    return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).call(this));
-  }
-
-  _createClass(Resume, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(_layout_manager2.default, null);
-    }
-  }]);
-
-  return Resume;
-}(_react.Component);
-
-document.addEventListener("DOMContentLoaded", function () {
-  _reactDom2.default.render(_react2.default.createElement(Resume, { name: 'Jonathan W. Ho' }), document.getElementById('root'));
-});
 
 /***/ }),
 /* 90 */

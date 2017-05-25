@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import DesktopLayout from './desktop/desktop_layout'
+import DesktopLayout from './desktop/DesktopLayout'
 
 class LayoutManager extends Component {
   /* Always render DesktopLayout for now */
