@@ -5,7 +5,8 @@
     "normalize.css": "^7.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-hot-loader": "next"
+    "react-hot-loader": "next",
+    "react-router": "^4.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
