@@ -93,9 +93,11 @@
 \section{Links}
 GitHub://\href{https://github.com/jonwho}{\custombold{jonwho}} \\
 LinkedIn://\href{https://www.linkedin.com/in/jonwho}{\custombold{jonwho}} \\
-Twitter://\href{https://twitter.com/lj080805}{\custombold{@lj080805}} \\
-WebApp://\href{https://cse134bteam3-hw5.firebaseapp.com/}{\custombold{CoinFlip}} \\
-ChatApp://\href{https://playwithfire.firebaseapp.com/}{\custombold{SimpleChat}}
+Chatbot://\href{https://github.com/jonwho/discord-bot}{\custombold{discord-bot}} \\
+StocksAPI://\href{https://github.com/jonwho/go-iex}{\custombold{go-iex}} \\
+StockNewsScraper://\href{https://github.com/jonwho/dd}{\custombold{dd}} \\
+Recipes://\href{https://github.com/recipey}{\custombold{Recipey}} \\
+RubyGem://\href{https://github.com/jonwho/lolxin}{\custombold{Lolxin}}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,18 +108,28 @@ ChatApp://\href{https://playwithfire.firebaseapp.com/}{\custombold{SimpleChat}}
 \subsection{Key Courses}
 Software Engineering \\
 Software Tools \& Technology \\
-Android Development \\
 Data Structures \\
 Operating Systems \\
 Algorithms \& Design \\
 Computer Architecture \\
-Compiler Construction \\
 Functional Programming \\
 Ubiquitous Computing \\
 Server Side Applications \\
-Mobile Applications \\
-Data Mining and Predictive Analysis
 \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Prev Internships
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Prev Internships}
+\subsection{BRIDGECREST MEDICAL}
+Ruby on Rails web portal \\
+Maintain/deploy/test Heroku app \\
+REST APIs for mobile devices \\
+\sectionsep
+\subsection{THERMO FISHER SCIENTIFIC}
+AWS app performance tests \\
+Global IT resources webpage updates
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -125,27 +137,26 @@ Data Mining and Predictive Analysis
 
 \section{Skills}
 \subsection{Languages}
-Java \textbullet{} JavaScript \textbullet{} Ruby \\
+Go \textbullet{} Java \textbullet{} JavaScript \textbullet{} Ruby \\
+CoffeeScript \textbullet{} Python
 \sectionsep
 \subsection{Web Development}
-AngularJS \textbullet{} Rails \textbullet{} HTML \textbullet{} CSS \\
-Sass \textbullet{} Node.js \textbullet{} Express.js \\
-Yeoman \textbullet{} Grunt \textbullet{} Gulp \textbullet{} Bower \\
-ReactJS \textbullet{} ES6 \textbullet{} Babel \\
-Bootstrap \textbullet{} Material Design \\
+HTML \textbullet{} CSS \textbullet{} Rails \textbullet{} Sass \\
+Grunt \textbullet{} Gulp \textbullet{} Bower \textbullet{} Webpack \\
+Angular \textbullet{} React \textbullet{} ES6 \textbullet{} Babel \\
+JSX \textbullet{} Bootstrap \textbullet{} Material Design \\
 \sectionsep
-\subsection{Editors}
-vi \textbullet{} Vim \textbullet{} Eclipse \textbullet{} Sublime Text \\
-IntelliJ IDEA \textbullet{} Visual Studios \\
-Android Studio \textbullet{} Unity \textbullet{} Atom
-\sectionsep
-\subsection{Miscellaneous}
-Git \textbullet{} XML \textbullet{} MySQL \textbullet{} JSON \\
-UML \textbullet{} Jasmine \textbullet{}
-Heroku \textbullet{} Firebase \\
-GitHub \textbullet{} Travis CI \textbullet{} Ubuntu \textbullet{} CentOS \\
-Arch Linux \textbullet{} PostgreSQL \textbullet{} Bash
-\sectionsep
+\subsection{Infrastructure}
+Heroku \textbullet{} Amazon Web Services \\
+Docker \textbullet{} Vagrant \\
+% \sectionsep
+% \subsection{Miscellaneous}
+% Git \textbullet{} XML \textbullet{} JSON \textbullet{} Firebase \\
+% GitHub \textbullet{} GitLab \textbullet{} Travis CI \\
+% Bash \textbullet{} Ubuntu \textbullet{} CentOS \\
+% PostgreSQL \textbullet{} MySQL \textbullet{} Vim \\
+% Cassandra
+% \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -163,10 +174,37 @@ Arch Linux \textbullet{} PostgreSQL \textbullet{} Bash
 
 \section{Experience}
 
+\runsubsection{Retention Science}
+\descript{| Software Engineer}
+\location{August 2017 – Present | Santa Monica, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Add filtering logic for clients' shop features
+\item Integrate Data Science predictions based on control/distribution ratio
+\item Create report builder for product metrics
+\item AWS Batch development to scale with holiday traffic
+\item New SLA monitors to oversee core services
+\item UTM integration for clients on Google Analytics
+\item 3rd party plugin system for flexible data integration
+\item Internal API for frontend and Data API for clients
+\item On-call rotation to triage/fix service operations
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Whisper App}
+\descript{| Software Developer}
+\location{November 2016 – June 2017 | Venice, CA}
+\begin{tightemize}
+\item Add ad partners through header bidding
+\item A / B testing to track mobile app installs through website
+\item Python revenue reporting scripts
+\item Audience demographic targeting for partner campaigns
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Fullscreen Media}
 \descript{| Full Stack Software Engineer}
-\location{August 2015 – Present | Playa Vista, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{August 2015 – November 2016 | Playa Vista, CA}
 \begin{tightemize}
 \item Develop tools in and around Video.js for HTML5 video support
 \item Write RSpec3 tests covering unit and feature testing
@@ -175,7 +213,7 @@ Arch Linux \textbullet{} PostgreSQL \textbullet{} Bash
 \item Support VTT and XML captions with conversion and publishing
 \item Create Sidekiq workers to run scheduled jobs from Redis queue
 \item Complete redesign of UI to optimize UX and development time
-\item Migrate data so new references allow tech ops to monitor progress
+\item Link data processes so tech ops can monitor pipeline progress
 \item Make use of AWS API S3, SNS, and SQS to connect internal services
 \end{tightemize}
 \sectionsep
@@ -186,29 +224,32 @@ Arch Linux \textbullet{} PostgreSQL \textbullet{} Bash
 \begin{tightemize}
 \item Worked on continuous integration for OAuth 2.0 on the network platform
 \item Created internal application with AngularJS to improve client integration
-\item Made a message board to gather and discuss ideas in hackathon with MEAN
+\item Made a message board app to discuss ideas for hackathon with MEAN stack
 \end{tightemize}
 \sectionsep
 
-\runsubsection{BridgeCrest Medical}
-\descript{| Software Engineer}
-\location{Oct 2013 – April 2014 | San Diego, CA}
-\begin{tightemize}
-\item Created web portal application in Ruby on Rails and delegated tasks
-\item Maintain application on server and deploy test applications on Heroku
-\item Started work on REST APIs for mobile application to use
-\end{tightemize}
-\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \runsubsection{BridgeCrest Medical}
+% \descript{| Software Engineer}
+% \location{Oct 2013 – April 2014 | San Diego, CA}
+% \begin{tightemize}
+% \item Created web portal application in Ruby on Rails and delegated tasks
+% \item Maintain application on server and deploy test applications on Heroku
+% \item Started work on REST APIs for mobile application to use
+% \end{tightemize}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\runsubsection{Thermo Fisher Scientific}
-\descript{| Software Development Intern}
-\location{June 2013 – Sep 2013 | Carlsbad, CA}
-\begin{tightemize}
-\item Developed performance tests for application on Amazon Web Services
-\item Updated Global IT functions resource page to improve employee experience
-\item Used AWS Java APIs to test data from SOAP/REST endpoints
-\end{tightemize}
-\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \runsubsection{Thermo Fisher Scientific}
+% \descript{| Software Development Intern}
+% \location{June 2013 – Sep 2013 | Carlsbad, CA}
+% \begin{tightemize}
+% \item Developed performance tests for application on Amazon Web Services
+% \item Updated Global IT functions resource page to improve employee experience
+% \end{tightemize}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROJECTS
@@ -221,7 +262,7 @@ Arch Linux \textbullet{} PostgreSQL \textbullet{} Bash
 \item Utilizes Qualcomm Vuforia API for augmented reality
 \item User interface with focus on Google's Material Design
 \item Log in with either Facebook Graph API or email verification
-\item Amazon EC2 instance hosts both MySQL and PHP middleware
+% \item Amazon EC2 instance hosts both MySQL and PHP middleware
 \end{tightemize}
 \sectionsep
 
@@ -234,14 +275,16 @@ Arch Linux \textbullet{} PostgreSQL \textbullet{} Bash
 \end{tightemize}
 \sectionsep
 
-\href{https://github.com/jonwho/ScottTheIntern}{\runsubsection{Scott the Intern}} \\
-\begin{tightemize}
-\item Video game for Xbox and PC made with XNA Game Studios 3.0
-\item Implemented free world movement in 2D sprite sheets
-\item Fight system was turn based and included sprite animations
-\item Maps for the game were made using a custom made map-maker
-\end{tightemize}
-\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \href{https://github.com/jonwho/ScottTheIntern}{\runsubsection{Scott the Intern}} \\
+% \begin{tightemize}
+% \item Video game for Xbox and PC made with XNA Game Studios 3.0
+% \item Implemented free world movement in 2D sprite sheets
+% \item Fight system was turn based and included sprite animations
+% \item Maps for the game were made using a custom made map-maker
+% \end{tightemize}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \runsubsection{My City} \\
